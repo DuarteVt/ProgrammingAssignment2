@@ -21,7 +21,7 @@ cacheSolve <- function(x, ...) {
   if(!is.null(inverseMatrix)){
     message("Getting cached inverse matrix")
     return(inverseMatrix)
-  }
+  } 
   y <- x$getMatrix()
   inverseMatrix <- solve(y, ...)
   x$setInverse(inverseMatrix)
